@@ -9,6 +9,7 @@ RUN unzip linux-x86_64.zip
 RUN cp linux-x86_64/clibwrapper_jiio-1.2-pre-dr-b04.jar $JAVA_HOME/jre/lib/ext
 RUN cp linux-x86_64/jai_imageio-1.2-pre-dr-b04.jar $JAVA_HOME/jre/lib/ext
 RUN cp linux-x86_64/libclib_jiio.so $JAVA_HOME/jre/lib/i386
+RUN cp linux-x86_64/libclib_jiio.so $JAVA_HOME/jre/lib/amd64
 RUN mkdir $JAVA_HOME/jre/i386
 RUN cp linux-x86_64/libclib_jiio.so $JAVA_HOME/jre/i386
 
